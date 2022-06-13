@@ -20,7 +20,7 @@ const Login = () => {
         },
     }),
 }) 
-if (response) {
+if (response.ok) {
   const data = await response.json()
   const token = data.data.token
   localStorage.setItem('token', token)
