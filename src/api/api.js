@@ -2,7 +2,7 @@ export const API_URL="https://strangers-things.herokuapp.com/api/2202-ftb-et-web
 export async function fetchPosts()
 {
     try{
-        const response = await fetch(API_URL+"posts/");
+        const response = await fetch(API_URL+"/Posts");
         const jdata= await response.json();
     //    console.log(jdata);
         return jdata.data.posts;

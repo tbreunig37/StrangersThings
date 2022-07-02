@@ -5,7 +5,7 @@ const Posts=(props)=>
     const setPosts=props.setPosts;
     return <>{posts.map((post)=>
         {
-            return <div key={post._id}>
+            return <div id="posts" key={post._id}>
                 {(post.title ? <h2 >{post.title}</h2> : null)}
                 {(post.author.username ? <p>Seller:{post.author.username}</p> : null)}
                 {(post.description ? <p>{post.description}</p> : null)}

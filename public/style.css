@@ -1,6 +1,183 @@
-/* #navlinks {
-    background-color: rgb(0, 140, 255);
-    display: flex;
-    flex-direction: row;
-    color: rgb(255, 0, 0);
-  } */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Hind+Madurai:wght@300&family=Kalam:wght@300&family=Luckiest+Guy&family=Roboto:wght@700&family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 12px;
+    background: #c6c6c6;
+    font-family: 'Hind Madurai', sans-serif;
+}
+    body {
+      font-family: 'Nunito', sans-serif;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Muli', sans-serif;
+    }
+
+    #page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainTitle {
+        color: #184063db;
+        font-size: xxx-large;
+    }
+
+    a {
+        box-shadow: 10px 10px;
+        color: #184063db;
+        background-color: white;
+        text-decoration: none;
+        border: 2px solid #184063db;
+        transition: color 0.3s ease 0s;
+        width: 180px;
+        padding: 12px;
+    }
+
+    a:hover {
+        background-color: #184063db;
+        border: 2px solid white;
+        color: white;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: #1840630a;
+        font-size: xx-large;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #1840630a;
+        font-size: larger;
+    }
+
+    span {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Login */
+
+    #registerBtn {
+
+    }
+
+    #registerBtn {
+        box-shadow: 10px 10px;
+        color: #184063db;
+        background-color: white;
+        text-decoration: none;
+        border: 2px solid #184063db;
+        transition: color 0.3s ease 0s;
+        width: 180px;
+        padding: 12px;
+    }
+
+    #registerBtn:hover {
+        background-color: #184063db;
+        border: 2px solid white;
+        color: white;
+    }
+
+    /* View Posts */
+
+    div #posts {
+        border: 5px solid white;
+        height: 50vh;
+        overflow: auto;
+        position: relative;
+        background-color: #184063db;
+        /* background: linear-gradient(to right, #5a95cadb, rgb(169, 175, 187), #184063db); */
+    }
+
+    #navbarLoggedIn {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #createNewPost {
+        background-color: #1840630a;
+        font-weight: bolder;
+    }
+
+    #newPost {
+        background: #d3d3d9;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 5px solid white;
+        background-color: #184063db;
+        padding-top: 46px;
+        box-shadow: 10px 10px 15px;
+    }
+
+    #createNewPostForm {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        background-color: #1840630a;
+    }
+
+    #title {
+        background: white;
+        font-weight: bolder;
+    }
+
+    #description {
+        border: 3px solid white;
+        overflow: auto;
+        position: relative;
+        background: white;
+        font-weight: bolder;
+        width: 290px;
+        height: 205px;
+        resize: none;
+    }
+
+    #price {
+        background: white;
+        font-weight: bolder;
+    }
+
+    #location {
+        background: white;
+        font-weight: bolder;
+    }
+
+    #deliver {
+        background: #1840630a;
+    }
+
+    #deliver-check {
+        cursor: pointer;
+    }
+
+    #deliverText {
+        background: #1840630a;
+        font-weight: bolder;
+    }
+
+    #postBtn {
+        width: 120px;
+        height: 45px;
+        font-weight: bolder;
+        font-size: large;
+        background: white;
+        color: #184063db;
+        cursor: pointer;
+    }
+
+    #postBtn:hover {
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+    }
