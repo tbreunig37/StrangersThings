@@ -36,13 +36,33 @@ const Register = () => {
       
 } 
 return (
-    <div id="register">
-        Create New Account
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)}></input>
-            <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}></input>
-            <button type="submit">Sign Up!</button>
-        </form>
+    <div id="registerCenterAll">
+        <div className="container">
+            <h2>Create New Account</h2>
+            <form id="registerForm" onSubmit={handleSubmit}>
+                <div className="form-control">
+                    <input
+                    id="inputField"
+                    type="text"
+                    placeholder="Username"
+                    onChange={(e) => setUsername(e.target.value)}
+                    />
+                </div>
+
+                <div className="form-control">
+                    <input
+                    id="inputField"
+                    type="password"
+                    placeholder="Password"
+                    onChange={(e) => setPassword(e.target.value)}
+                    />
+                </div>
+
+                <div id="registerBtnParent">
+                    <button id="registerBtn" type="submit">Sign Up!</button>
+                </div>
+            </form>
+        </div>
     </div>
 )}
 export default Register

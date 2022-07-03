@@ -66,26 +66,111 @@
 
     /* Login */
 
-    #registerBtn {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 566px;
+        height: 396px;
+        background: #184063db;
+        box-shadow: 10px 10px 15px #000000d1;
+    }
 
+    #loginForm {
+        height: 100%;
+        width: 100%;
+        background: #1840630a;
+    }
+
+    .form-control {
+        display: flex;
+        justify-content: center;
+        background-color: #1840630a;
+    }
+
+    #loginCenterAll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #inputField {
+        height: 40px;
+        width: 260px;
+        background: white;
+        color: #184063db;
+        font-size: initial;
+        font-weight: bolder;
+    }
+
+    #loginBtnParent {
+        display: flex;
+        justify-content: center;
+        background: #1840630a;
+    }
+
+    #loginBtn {
+        width: 120px;
+        height: 45px;
+        font-weight: bolder;
+        font-size: large;
+        background: white;
+        color: #184063db;
+        transition: color 0.3s ease 0s;
+        cursor: pointer;
+    }
+
+    #loginBtn:hover {
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Register */
+
+    #registerBtnParent {
+        display: flex;
+        justify-content: center;
+        background: #1840630a;
     }
 
     #registerBtn {
-        box-shadow: 10px 10px;
+        width: 120px;
+        height: 45px;
+        font-weight: bolder;
+        font-size: large;
+        background: white;
         color: #184063db;
-        background-color: white;
-        text-decoration: none;
-        border: 2px solid #184063db;
         transition: color 0.3s ease 0s;
-        width: 180px;
-        padding: 12px;
+        cursor: pointer;
     }
 
     #registerBtn:hover {
-        background-color: #184063db;
-        border: 2px solid white;
+        background-color: gray;
         color: white;
+        cursor: pointer;
     }
+
+    #registerCenterAll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #registerForm {
+        height: 100%;
+        width: 100%;
+        background: #1840630a;
+    }
+
+    
+      /* Logout */
+
+      #navbarLoggedOut {
+        display: flex;
+        justify-content: center;
+      }
 
     /* View Posts */
 
@@ -108,16 +193,17 @@
         font-weight: bolder;
     }
 
+    /* Newpost */
+
     #newPost {
         background: #d3d3d9;
         color: white;
         display: flex;
         align-items: center;
         flex-direction: column;
-        border: 5px solid white;
         background-color: #184063db;
         padding-top: 46px;
-        box-shadow: 10px 10px 15px;
+        box-shadow: 10px 10px 15px #000000d1;
     }
 
     #createNewPostForm {

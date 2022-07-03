@@ -37,36 +37,36 @@ setPassword('')
 
 
 return(
-  <div className='container'>
-  
-    <form onSubmit={handleSubmit}>
-      <div className='form-control'>
-        Login
-        <input 
-          type="text"
-          placeholder='Username'
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-      </div>
+    <div id='loginCenterAll'>
+      <div className='container'>
+        <h2>Login</h2>
+        <form id='loginForm' onSubmit={handleSubmit}>
+          <div className='form-control'>
+            <input
+            id='inputField' 
+            type="text"
+            placeholder='Username'
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          </div>
         
-      <div>
-        <input 
-        type="password" 
-        placeholder='Password' 
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      
-      <input
-      type="submit"
-      value="Log In!"
-      />
+          <div className='form-control'>
+            <input
+            id='inputField' 
+            type="password" 
+            placeholder='Password' 
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
 
-      <p className='loginText'>Don't have an account? <a id='registerBtn' href='#'>Register</a> </p>
-    </form> 
-  </div>
+          <div id='loginBtnParent'>
+            <button id='loginBtn' type='submit'>Log In!</button>
+          </div>
+        </form> 
+      </div>
+    </div>
 )}
 
 export default Login
